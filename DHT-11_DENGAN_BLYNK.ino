@@ -1,13 +1,13 @@
 #include <ESP8266WiFi.h>
 #define BLYNK_PRINT Serial   
 #include <BlynkSimpleEsp8266.h>
-#include "DHT.h"           // Memasukan library sensor DHT
+#include "DHT.h"          
 
 char auth[] = "fnM6JBXdtKa5ufm8Ncl-abadoRLYEIRJ";
 char ssid[] = "A83";
 char pass[] = "gocengdulu";
  
-#define DHTTYPE DHT11      // Sensor yang akan diakses yaitu DHT11
+#define DHTTYPE DHT11      
 #define DHTPIN D1
 DHT dht(DHTPIN, DHTTYPE);
 WidgetLCD lcd(V0);
